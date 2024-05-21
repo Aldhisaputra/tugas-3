@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Data Mahasiswa</title>
+<title>Data Barang</title>
 <style>
 body {
 font-family: Arial, sans-serif;
@@ -50,7 +50,6 @@ border: none;
 border-radius: 4px;
 cursor: pointer;
 margin-left: 10px;
-
 }
 button:hover {
 background-color: #45a049;
@@ -62,41 +61,39 @@ margin-bottom: 20px;
 </style>
 </head>
 <body>
-<h2>Data Mahasiswa</h2>
+<h2>Data Barang</h2>
 <div class="button-container">
-<form action="<?php echo site_url('mahasiswa/search_mahasiswa'); ?>"
-method="post">
-<input type="text" name="keyword" placeholder="Cari Nama Mahasiswa">
+<form action="<?php echo site_url('barang/search_barang'); ?>" method="post">
+<input type="text" name="keyword" placeholder="Cari Nama Barang">
 <button type="submit">Cari</button>
-<button onclick="window.location.href='<?php echo
-base_url('mahasiswa/data_mahasiswa'); ?>'" type="button">Reset</button>
+<button onclick="window.location.href='<?php echo base_url('barang'); ?>'" type="button">Reset</button>
 </form>
 </div>
 <table>
 <tr>
 <th>ID</th>
-<th>Nama</th>
-<th>NPM</th>
-<th>Angkatan</th>
-<th>Kelas</th>
-<th>Alamat</th>
-<th>Mata Kuliah Favorit</th>
-<th>Email</th>
-<th>Jenis Kelamin</th>
-<th>Tanggal Lahir</th>
+<th>Kode Barang</th>
+<th>Nama Barang</th>
+<th>Kategori Barang</th>
+<th>Deskripsi Barang</th>
+<th>Harga Beli</th>
+<th>Harga Jual</th>
+<th>Stok Barang</th>
+<th>Supplier Barang</th>
+<th>Tanggal Masuk</th>
 </tr>
-<?php foreach ($mahasiswa as $mhs) { ?>
+<?php foreach ($barang as $brg) { ?>
 <tr>
-<td><?php echo $mhs['id']; ?></td>
-<td><?php echo $mhs['nama']; ?></td>
-<td><?php echo $mhs['npm']; ?></td>
-<td><?php echo $mhs['angkatan']; ?></td>
-<td><?php echo $mhs['kelas']; ?></td>
-<td><?php echo $mhs['alamat']; ?></td>
-<td><?php echo $mhs['mata_kuliah_favorit']; ?></td>
-<td><?php echo $mhs['email']; ?></td>
-<td><?php echo $mhs['jenis_kelamin']; ?></td>
-<td><?php echo $mhs['tanggal_lahir']; ?></td>
+<td><?php echo $brg['id']; ?></td>
+<td><?php echo $brg['kode_barang']; ?></td>
+<td><?php echo $brg['nama_barang']; ?></td>
+<td><?php echo $brg['kategori_barang']; ?></td>
+<td><?php echo $brg['deskripsi_barang']; ?></td>
+<td><?php echo $brg['harga_beli']; ?></td>
+<td><?php echo $brg['harga_jual']; ?></td>
+<td><?php echo $brg['stok_barang']; ?></td>
+<td><?php echo $brg['supplier_barang']; ?></td>
+<td><?php echo $brg['tanggal_masuk']; ?></td>
 </tr>
 <?php } ?>
 </table>
