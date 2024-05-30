@@ -22,8 +22,11 @@
                     <a class="nav-link <?= $active_menu == 'home' ? 'active' : ''; ?>" href="<?= site_url('beranda') ?>">Home</a>
                 </li>
                 <li class="nav-item">
-    <a class="nav-link <?= $active_menu == 'data_barang' ? 'active' : ''; ?>" href="<?= site_url('barang/data_barang') ?>">Data Barang</a>
-</li>
+                    <a class="nav-link <?= $active_menu == 'data_barang' ? 'active' : ''; ?>" href="<?= site_url('barang/data_barang') ?>">Data Barang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= $active_menu == 'tentang' ? 'active' : ''; ?>" href="<?= site_url('tentang') ?>">Tentang</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -44,7 +47,7 @@
 <style>
     .foto {
         width: auto;
-        height: 50px; /* Sesuaikan tinggi dengan kebutuhan Anda */
+        height: 50px;
     }
 </style>
 <script src="<?= base_url('assets/bootstrap.bundle.min.js') ?>"></script>

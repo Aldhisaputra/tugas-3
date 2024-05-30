@@ -53,4 +53,5 @@ $route['default_controller'] = 'barang';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['barang/data_barang'] = 'barang/index';
+$route['tentang'] = 'tentang';
 
