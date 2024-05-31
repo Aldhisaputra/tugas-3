@@ -7,7 +7,7 @@
 
     <link rel="icon" href="<?php echo site_url('assets/foto.jpg'); ?>" type="image/x-icon">
     <!-- Bootstrap CSS -->
-    <link href="<?= base_url('assets/bootstrap.min.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/bootstrapp.min.css') ?>" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
@@ -50,6 +50,6 @@
         height: 50px;
     }
 </style>
-<script src="<?= base_url('assets/bootstrap.bundle.min.js') ?>"></script>
+<script src="<?= base_url('assets/bootstrapp.bundle.min.js') ?>"></script>
 </body>
 </html>
